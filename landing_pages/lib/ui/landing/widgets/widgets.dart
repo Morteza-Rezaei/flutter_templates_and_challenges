@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:landing_pages/ui/landing_page/widgets/text_style.dart';
+import 'package:landing_pages/ui/landing/widgets/text_style.dart';
 
 // Landing Page 1
 Widget landingPage1({

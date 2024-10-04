@@ -1,10 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:landing_pages/ui/landing_page/bloc/landing_blocs.dart';
-import 'package:landing_pages/ui/landing_page/bloc/landing_events.dart';
-import 'package:landing_pages/ui/landing_page/bloc/landing_states.dart';
-import 'package:landing_pages/ui/landing_page/widgets/widgets.dart';
+import 'package:landing_pages/ui/landing/bloc/landing_blocs.dart';
+import 'package:landing_pages/ui/landing/bloc/landing_events.dart';
+import 'package:landing_pages/ui/landing/bloc/landing_states.dart';
+import 'package:landing_pages/ui/landing/widgets/widgets.dart';
+import 'package:landing_pages/ui/splash/splash_page.dart';
 import 'package:landing_pages/values/app_colors.dart';
 import 'package:landing_pages/values/app_paths.dart';
 import 'package:landing_pages/values/app_texts.dart';
@@ -70,6 +71,14 @@ class LandingPage extends StatelessWidget {
                     buttonText: LandingPageTexts.p3Button,
                     onPressed: () {
                       // navigate to the app
+                      // but for now, just navigate to the splash screen
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SplashPage(),
+                        ),
+                        (route) => false,
+                      );
                     },
                   ),
                 ],

@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:landing_pages/ui/landing_page/bloc/landing_events.dart';
-import 'package:landing_pages/ui/landing_page/bloc/landing_states.dart';
+import 'package:landing_pages/ui/landing/bloc/landing_events.dart';
+import 'package:landing_pages/ui/landing/bloc/landing_states.dart';
 
 class LandingBlocs extends Bloc<LandingEvents, LandingStates> {
   LandingBlocs() : super(LandingStates()) {

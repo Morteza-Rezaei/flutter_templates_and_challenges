@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:landing_pages/ui/landing_page/bloc/landing_blocs.dart';
-import 'package:landing_pages/ui/landing_page/landing_page.dart';
+import 'package:landing_pages/ui/landing/bloc/landing_blocs.dart';
+import 'package:landing_pages/ui/landing/landing_page.dart';
 import 'package:landing_pages/values/app_colors.dart';
 
 void main() {

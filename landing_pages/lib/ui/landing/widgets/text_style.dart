@@ -5,13 +5,15 @@ import 'package:landing_pages/values/app_colors.dart';
 Text appTitle({
   required String text,
   double fontSize = 60,
+  FontWeight fontWeight = FontWeight.w600,
+  Color color = AppColors.primaryGreen,
 }) {
   return Text(
     text,
     style: GoogleFonts.poppins(
       fontSize: fontSize,
-      fontWeight: FontWeight.w600,
-      color: AppColors.primaryGreen,
+      fontWeight: fontWeight,
+      color: color,
       height: 0,
     ),
     textAlign: TextAlign.center,

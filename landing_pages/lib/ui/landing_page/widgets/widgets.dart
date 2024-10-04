@@ -3,6 +3,7 @@ import 'package:landing_pages/ui/landing_page/widgets/text_style.dart';
 
 // Landing Page 1
 Widget landingPage1({
+  required int nextPageIndex,
   required String imagePath,
   required String title,
   required String subTitle,
@@ -53,6 +54,7 @@ Widget landingPage1({
 
 // Landing Page 2
 Widget landingPage2({
+  required int nextPageIndex,
   required String imagePath,
   required String title,
   required String subTitle,

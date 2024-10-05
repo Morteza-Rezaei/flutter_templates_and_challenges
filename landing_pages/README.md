@@ -15,5 +15,3 @@ Splash screen and onboarding screen for the GOGREEN app. The landing page was de
   <img src="assets/readme/ss_2.jpg" alt="Screenshot 3" width="200"/>
   <img src="assets/readme/ss_3.jpg" alt="Screenshot 4" width="200"/>
 </p>
-
-

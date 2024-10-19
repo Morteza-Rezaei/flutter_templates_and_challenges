@@ -8,7 +8,7 @@ class AppText {
 
   // Login Screen
   static const String loginTitle = 'Login here';
-  static const String loginSubtitle = 'Welcome back you’ve been missed!';
+  static const String loginSubtitle = 'Welcome back you’ve\nbeen missed!';
   static const String loginForgetPassword = 'Forgot your password?';
   static const String loginFilledButton = 'Sign In';
   static const String loginTextButton = 'Create new account';

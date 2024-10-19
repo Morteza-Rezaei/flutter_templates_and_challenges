@@ -1,3 +1,4 @@
+import 'package:authentication_pages/ui/sign_in/sign_in.dart';
 import 'package:authentication_pages/values/app_paths.dart';
 import 'package:authentication_pages/values/app_text.dart';
 import 'package:authentication_pages/widgets/text_styles.dart';
@@ -10,15 +11,14 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          // the top right and bottom left background images
-          ...bgPositionedImages(),
+      body: SafeArea(
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // the top right and bottom left background images
+            ...bgPositionedImages(),
 
-          // the welcome image
-          Positioned(
+            Positioned(
               // take the full screen width
               width: MediaQuery.of(context).size.width,
               child: Column(
@@ -41,19 +41,37 @@ class WelcomePage extends StatelessWidget {
                     children: [
                       appElevatedButton(
                         text: AppText.welcomeFilledButton,
-                        onPressed: () {},
+                        onPressed: () {
+                          // navigate to the sign in page
+                          Navigator.pushAndRemoveUntil(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SignInPage(),
+                              ),
+                              (route) => true);
+                        },
                       ),
                       const SizedBox(width: 15),
                       appOutlinedButton(
                         text: AppText.welcomeTextButton,
-                        onPressed: () {},
+                        onPressed: () {
+                          // navigate to the sign in page
+                          Navigator.pushAndRemoveUntil(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SignInPage(),
+                              ),
+                              (route) => true);
+                        },
                       ),
                     ],
                   ),
                 ],
-              )),
-        ],
+              ),
+            ),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }

@@ -42,6 +42,26 @@ Text appSubtitleText({
   );
 }
 
+// app big subtitle text
+Text appBigSubtitleText({
+  required String subtitle,
+  double fontSize = 20,
+  FontWeight fontWeight = FontWeight.w600,
+  Color color = AppColors.black,
+  TextAlign textAlign = TextAlign.center,
+}) {
+  return Text(
+    subtitle,
+    style: GoogleFonts.poppins(
+      color: color,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      height: 0,
+    ),
+    textAlign: textAlign,
+  );
+}
+
 // app text button
 Text appTextButton({
   required String text,

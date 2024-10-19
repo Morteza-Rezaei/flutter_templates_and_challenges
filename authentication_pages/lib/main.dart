@@ -1,6 +1,7 @@
 import 'package:authentication_pages/ui/welcome/welcome.dart';
 import 'package:authentication_pages/values/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MainApp());
@@ -47,6 +48,61 @@ class MainApp extends StatelessWidget {
             ),
             // when clicked color
             overlayColor: AppColors.black,
+          ),
+        ),
+
+        // textfield theme
+        inputDecorationTheme: InputDecorationTheme(
+          filled: true,
+          fillColor: AppColors.lightBlue,
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 20,
+            vertical: 20,
+          ),
+          labelStyle: GoogleFonts.poppins(
+            color: AppColors.darkGrey,
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            height: 0,
+          ),
+          floatingLabelStyle: GoogleFonts.poppins(
+            color: AppColors.primary,
+            fontSize: 14,
+            fontWeight: FontWeight.w400,
+            height: 0,
+          ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide.none,
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: const BorderSide(
+              color: AppColors.primary,
+              width: 2,
+            ),
+          ),
+          disabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide.none,
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide.none,
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: const BorderSide(
+              color: AppColors.red,
+              width: 2,
+            ),
+          ),
+          focusedErrorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: const BorderSide(
+              color: AppColors.red,
+              width: 2,
+            ),
           ),
         ),
       ),
